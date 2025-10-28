@@ -112,7 +112,7 @@ mvn test -Dtest=NetworkChannelTest              # 9 tests
 
 ## Technical Details
 
-**Concurrency**: `BlockingQueue`, `volatile` no shared mutable state  
+**Concurrency**: `BlockingQueue` no shared mutable state  
 **Network**: TCP_NODELAY, 8KB buffers, LOWDELAY QoS, socket reuse 
 
 ---
