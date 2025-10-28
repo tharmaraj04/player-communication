@@ -125,7 +125,6 @@ public class PlayerTest {
         Thread playerThread = new Thread(responderPlayer);
         playerThread.start();
         Thread.sleep(100);
-        responderPlayer.shutdown();
         playerThread.join();
         
         assertFalse(playerThread.isAlive());
